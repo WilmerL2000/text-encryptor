@@ -50,7 +50,7 @@ footer {
   background-color: #cad0e6;
   padding: 1rem;
   font-weight: bold;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
