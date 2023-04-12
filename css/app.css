@@ -50,6 +50,8 @@ footer {
   background-color: #cad0e6;
   padding: 1rem;
   font-weight: bold;
+  position: absolute;
+  bottom: 0;
 }
 
 footer span {
