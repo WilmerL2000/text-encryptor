@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor Challenge</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/check.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/icon.png" alt="Icon image" class="icon" />
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main class="container">
+        <div class="main-content">
+            <textarea id="textArea" class="text-area" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="info">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                </svg>
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button type="button" class="button-1" id="encrypt">
+                    Encriptar
+                </button>
+                <button type="button" class="button-2" id="desencrypt">
+                    Desencriptar
+                </button>
+            </div>
+        </div>
+        <div class="message-container box-structure" id="box-content">
+            <div id="text-box" class="hidden-content">
+                <div id="messageEncrypt" class="encoded-text"></div>
+                <button type="button" class="button-copy" id="copy">
+                    <span id="copy-text">Copiar</span>
+                    <div class="hidden-content" id="checked">
+                        <div class="wrapper"> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div id="message-box" class="message-content">
+                <img src="img/message.png" alt="Message image" class="message-image" />
+                <div class="message-texts">
+                    <h2>Nigun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Desarrollado por &nbsp; <span>Wilmer Lopez 😜</span>
+    </footer>
+    <script type="module" src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
